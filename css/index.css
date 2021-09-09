@@ -12,8 +12,7 @@ body {
 	margin-left: 10%;
 }
 .homestyle {
-	height: 100vh;
-	min-height: 100%;
+	padding: 100px 0;
 	position: relative;
 	z-index: 0;
 }
@@ -115,6 +114,7 @@ body {
 	font-weight: bold;
 }
 .pic img {
+	width: 465px;
 	height: 500px;
 	opacity: 0.6;
 }
@@ -125,17 +125,10 @@ body {
 #about {
 	height: -10rem;
 }
-.aboutm p {
-	display:inline-block;
-}
-.aboutm p .btn {
-	background-color: gainsboro;
-}
-.aboutm p .btn:hover {
-	background-color: blue;
-	color: white;
-}
-.slika {
+.slika img {
+	width: 300px;
+	margin-top: 250px;
+	margin-right:100px ;
 	opacity: 0.7;
 }
 .story {
@@ -143,24 +136,29 @@ body {
 }
 .my {
 	position: absolute;
-	margin-left: 30px;
+	margin-left: 20px;
+}
+.my h3 {
+	background-color: royalblue ;
 }
 .skil {
 	position: absolute;
-	top: 10%;
-	margin-left: 12px;
+	margin-left: 370px;
+}
+.skil h3 {
+	background-color: royalblue;
 }
 .experience {
 	position: absolute;
-	top: 15rem;
-	margin-left: 1.5rem;
+	top: 19rem;
+	margin-left: 370px;
 }
 .experience h6 {
 	font-weight: bold;
 }
 .experience span {
 	position: absolute;
-	margin-left: 80px;
+	margin-left: 40px;
 	float: right;
 }
 .crta {
@@ -171,8 +169,8 @@ body {
 }
 .experience2 {
 	position: absolute;
-	top: 22rem;
-	margin-left: 1.5rem;
+	top: 25rem;
+	margin-left: 370px;
 }
 .experience2 h6 {
 	font-weight: bold;
@@ -497,6 +495,11 @@ body {
 	padding-top: 25px;
 }
 
+
+
+
+
+
 @media (max-width: 767.98px) {
 	.sebo span {
 		margin-left: 55px;
@@ -505,54 +508,72 @@ body {
 		margin-left: 55px;
 	}
 	.txt p {
-		font-size: 15px;
+		font-size: 12px;
+		margin-top: 12px;
 	} 
 	.butn p .btn {
 		margin-top: -10px;
-		margin-left: 90px;
 	}
-	.aboutm p {
-		display: inline-block;
-		margin-left: 2rem;
+	.pic img {
+		width: 506px;
 	}
-	.slika {
+	.pic1 img {
+		width: 498px;
+	}
+	.story {
+		position: relative;
+	}
+	.my {
+		font-size: 15px;
+		margin-top: -100px;
+		margin-left: 8px;
+	}
 
-		margin-right: 2rem;
-	}
-	.slika img {
-		width: 430px;
-	}
-	.my p {
-		margin-left: 1rem;
+	.skil {
+		position: absolute;
+		margin-top: 100px;
+		width: 100%;
+		margin-left: 5px;
+		font-size: 15px;
 	}
 	.skil h3 {
-		font-size: 20px;
-	}
-	.skil p {
-		margin-left: 1rem;
-		font-size: 13px;
+		width: 498px;
 	}
 	.experience {
 		position: absolute;
-		top: 8rem;
+		top: -15rem;
 		margin-left: 2rem;
 	}
 	.experience h6, span {
 		font-size: 13px;
+		font-weight: bolder;
+	}
+	.experience h6:hover {
+		color:royalblue;
 	}
 	.experience2 {
 		position: absolute;
-		top: 14rem;
+		top: -10rem;
 		margin-left: 2rem;
 	}
-	.experience2 h6 {
+	.experience2 h6, span {
 		font-size: 13px;
+		font-weight: bolder;
+	}
+	.experience2 h6:hover {
+		color: royalblue;
 	}
 	#services {
 		padding-top: 10rem;
 	}
-	.uix-desing {
-		margin-left: 2rem;
+	.uixall {
+		margin-left: -10px ;
+	}
+	.have {
+		margin-left: -160px;
+	}
+	.have span {
+		width:86%;
 	}
 }
 

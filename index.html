@@ -15,7 +15,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top  bg-primary">
+      <nav class="navbar navbar-expand-lg navbar-dark <!--  -->  bg-primary">
         <div class="container">
           <a class="navbar-brand d-flex ml-5" href="index.html">Boro <span class="text-warning font-weight-bolder animate__animated animate__bounce">G</span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@
             <div class="text-hello text-white">
               <span class="hitext animate__animated animate__jackInTheBox">"Hi There!"</span>
               <h1 class="mb-4">"Im Borce Georgievski"</h1>
-              <p class="typewriter">A Web Desinger, I Love My Work,<br> Feel Free To <span class="text-warning">Contact Me</span>...</p>
+              <p class="typewriter">A Web Desinger, Freelance,<br> Feel Free To <span class="text-warning">Contact Me</span>...</p>
             </div>
             <div class="txt w-100">
               <p class="text-white">Far far away behind the word mountains, far from the countries Vokalia<br> and Consonantia, there live the blind texts.</p>
@@ -67,9 +67,9 @@
               <p><button type="button" class="btn btn-light ml-3 text-primary">View Portfolio <i class="fas fa-long-arrow-alt-right ml-2"></i></button></p>
             </div>
           </div>
-          <div class="col-lg-5 col-12 bg-warning">
+          <div class="col-lg-5 bg-warning">
             <div class="pic">
-              <img src="img/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" class="img-fluid">
+              <img src="img/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" >
             </div>
           </div>
         </div>
@@ -78,21 +78,15 @@
     <section class="bg-light" id="about">
       <div class="container py-4">
         <div class="row no-gutters">
-          <div class="col-lg-4 col-12 py-5">
+          <div class="col-lg-4 py-5">
             <div class="pic1">
-              <img src="img/leon-fznQW-kn5VU-unsplash.jpg" class="img-fluid ml-5">
+              <img src="img/leon-fznQW-kn5VU-unsplash.jpg" class="img-fluid ml-2  ">
             </div>
           </div>
           <div class="col-lg-8 py-5 bg-light">
             <div class="aboutm">
-              <p><a class="btn btn-light font-weight-bold text-uppercase  ml-5" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">About me</a></p>
-              <p><button class="btn btn-light font-weight-bold text-uppercase  ml-5" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Skills</button></p>
               <div class="row">
-                <div class="col-lg-6 col-ms-12">
-                  <div class="slika">
-                    <img src="img/randalyn-hill-Z1HXJQ2aWIA-unsplash.jpg" class="img-fluid ml-4">
-                  </div>
-                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="col-lg-6">
                     <div class="story">
                       <div class="my">
                         <h3 class="font-weight-bold text-center py-3">My Story</h3>
@@ -100,24 +94,23 @@
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-lg-6 col-ms-12">
-                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="col-lg-10">
                   <div class="story">
                       <div class="skil">
                         <h3 class="font-weight-bold text-center py-3">Skills</h3>
                           <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live   the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large  language ocean.</p>
                         </div>
+                      <div class="experience py-3">
+                        <h6>HTML / CSS <span>80%</span></h6>
+                        <hr class="crta">
+                      </div>
+                      <div class="experience2">  
+                        <h6>JavaScript <span>60%</span></h6>
+                        <hr class="crta2">
+                      </div>  
                     </div>
-                    <div class="experience py-3">
-                      <h6>HTML / CSS <span>80%</span></h6>
-                      <hr class="crta">
-                    </div>
-                    <div class="experience2">  
-                      <h6>JavaScript <span>60%</span></h6>
-                      <hr class="crta2">
-                    </div>  
                   </div>
+                </div>    
                 </div>
               </div>
             </div>
@@ -135,10 +128,11 @@
             </div>
           </div>
         </div>
-        <div class="row ml-5">
-          <div class="col-lg-3 ml-5 p-5 bg-white">
+        <div class="row ml-2">
+          <div class="col-lg-3 ml-5 p-5 bg-white w-75 my-5">
+            <div class="uixall">
             <div class="uix-desing">
-              <p><img src="img/uix.png"></p>
+              <p><img src="img/uix.png"></p>  
             </div>
             <div class="uix py-4">
               <h5 class="text-primary font-weight-bold">UI & UX Desing</h5>
@@ -147,8 +141,10 @@
             <div class="read">
               <a href="#">Read more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
+            </div>
           </div>
-          <div class="col-lg-3 ml-5 p-5 bg-white">
+          <div class="col-lg-3 ml-5 p-5 bg-white w-75 my-5">
+            <div class="uixall">
             <div class="uix-desing">
               <p><img src="img/web.png"></p>
             </div>
@@ -160,7 +156,9 @@
               <a href="#">Read more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
           </div>
-          <div class="col-lg-3 ml-5 p-5 bg-white">
+          </div>
+          <div class="col-lg-3 ml-5 p-5 bg-white w-75 my-5">
+            <div class="uixall">
             <div class="uix-desing">
               <p><img src="img/graphic.png"></p>
             </div>
@@ -171,6 +169,7 @@
             <div class="read">
               <a href="#">Read more <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
+          </div>
           </div>
           <div class="col-lg-12 py-5">
             <div class="have">
@@ -231,7 +230,7 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-lg-6 py-4">
             <div class="port-pic animate__animated animate__zoomIn">
               <img src="img/port-1.png" class="img-fluid">
               <div class="text-holder">
@@ -257,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 py-4">
             <div class="port-pic2 animate__animated animate__zoomIn">
               <img src="img/port-4.png" class="img-fluid">
               <div class="text-holder">
