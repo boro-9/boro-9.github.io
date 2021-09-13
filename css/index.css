@@ -563,17 +563,14 @@ body {
 	.experience2 h6:hover {
 		color: royalblue;
 	}
+	.port {
+		padding: 10px;
+	}
 	#services {
 		padding-top: 10rem;
 	}
 	.uixall {
 		margin-left: -10px ;
-	}
-	.have {
-		margin-left: -160px;
-	}
-	.have span {
-		width:86%;
 	}
 	.blue-txt h3 {
 		text-align: center;
@@ -581,6 +578,42 @@ body {
 	}
 	.blue-txt p {
 		text-align: center;
+	}
+	.ba {
+		margin: 20px;
+	}
+	.have {
+		margin-left: -180px;
+	}
+	.have span {
+		width:86%;
+	}
+	.myadd {
+		margin-left: 10px;
+	}
+	.mye {
+		margin-left: 10px;
+	}
+	.myphone {
+		margin-left: 10px;
+	}
+	.endname {
+		margin-left: 100px;
+	}
+	.endname span {
+		font-size: 60px;
+	}
+	.social-list {
+		margin-left: 100px;
+	}
+	.services-list {
+		margin-right: 50px;
+	}
+	.end {
+		margin-right: 100px;
+	}
+	.strelka {
+		margin-right: 100px;
 	}
 }
 
