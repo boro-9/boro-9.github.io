@@ -584,6 +584,8 @@ body {
 		text-align: center;
 	}
 	.ba {
+		position: relative;
+		left: 2px;
 		margin: 20px;
 	}
 	.have {
