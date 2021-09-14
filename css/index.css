@@ -391,6 +391,10 @@ body {
 .somepic a:hover {
 	color: blue;
 }
+.ba {
+	position: relative;
+	left: 60px;
+}
 .baplan {
 	position: relative;
 }
