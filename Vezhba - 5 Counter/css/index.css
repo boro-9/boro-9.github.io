@@ -1,0 +1,34 @@
+body {
+	background: orange;
+	color: black;
+}
+.max-height {
+	min-height: 100vh;
+}
+.main-container {
+	border: 0.1rem solid white;
+	box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.9);
+	border-radius: 0.2rem;
+}
+#counter {
+	color: green;
+	font-size: 10rem;
+}
+.prevBtn {
+	box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.9);
+	background: blue;
+	color: white;
+}
+.nextBtn {
+	box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.9);
+	background: blue;
+	color: white;
+}
+.prevBtn:hover {
+	background: blue;
+	color: black;
+}
+.nextBtn:hover {
+	background: blue;
+	color: black;
+}
