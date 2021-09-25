@@ -1,0 +1,26 @@
+.max-height {
+	min-height: 100vh;
+}
+body {
+	background: lightblue;
+}
+.message-container {
+	background: mainwhite;
+}
+.message-content {
+	background: lightblue;
+}
+#submitBtn {
+	background: lightblue;
+	color: darkblue;
+}
+#submitBtn:hover {
+	background: black;
+	color: white;
+}
+.feedback {
+	display: none;
+}
+.show {
+	display: block;
+}
