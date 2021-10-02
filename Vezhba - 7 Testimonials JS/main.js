@@ -4,7 +4,10 @@
 	const customerText = document.querySelector('#customer-text')
 	const buttons = document.querySelectorAll('.btn')
 	let index = 0
-	const customers []
+	const customers = []
+
+
+
 
 	function Customer(img, name, text) {
 		this.img = img
@@ -12,9 +15,14 @@
 		this.text = text
 	}
 
+
+
 	function createCustomer(img, name, text) {
+
 		let fullImg = './img/customer-${img}.jpg'
 		let customer = new Customer(fullImg, name, text)
+
+		customers.push(customer)
 	}
 
 
@@ -25,27 +33,27 @@
 	createCustomer(4, 'Wanda', 'Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.')
 
 
- buttons.forEach(function(button){
- 	button.addEventListener('click', function(e){
- 		if(e.target.parentElement.classList.contains('prevBtn')){
- 			if(index === 0){
- 				index = customers.length
+ 	buttons.forEach(function(button){
+ 		button.addEventListener('click', function(e){
+ 			if(e.target.parentElement.classList.contains('prevBtn')){
+ 				if(index === 0){
+ 					index = customers.length
+ 				}
+ 				index--
+ 				customerImage.src = customers[index].img
+ 				customerName.textContent = customers[index].name
+ 				customerText.textContent = customers[index].text
  			}
- 			index--
- 			customerImage.src = customers[index].img
- 			customerName.textContent = customers[index].name
- 			customerText.textContent = customers[index].text
- 		}
- 		if (e.target.parentElement.classList.contains('nextBtn')){
- 			index++
- 			if(index === customers.length){
- 				index = 0
+ 			if (e.target.parentElement.classList.contains('nextBtn')){
+ 				index++
+ 				if(index === customers.length){
+ 					index = 0
+ 				}
+ 				customerImage.src = customers[index].img
+ 				customerName.textContent = customers[index].name
+ 				customerText.textContent = customers[index].text
  			}
- 			customerImage.src = customers[index].img
- 			customerName.textContent = customers[index].name
- 			customerText.textContent = customers[index].text
- 		}
- 	})
- })	
+ 		})
+ 	})	
 
 })();
