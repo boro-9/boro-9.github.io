@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<title>Filter JS</title>
+</head>
+<body>
+
+<header>
+	<nav class="navbar navbar-expand-lg px-4">
+		<a class="navbar-brand" href="#">Hip-Hop</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+			<span class="toggler-icon"><i class="fas fa-bars"></i></span>
+		</button>
+		<div class="collapse navbar-collapse" id="myNav">
+			<ul class="navbar-nav mx-auto  text-capitalize">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Store</a>
+				</li>
+			</ul>
+			<div class="nav-info-items d-none d-lg-flex">
+				<div class="nav-info align-items-center d-flex justify-content-between mx-lg-5">
+					<span class="nav-icon mx-lg-3"><i class="fas fa-phone"></i></span>
+					<p class="mb-0">+ 123 456 789</p>
+				</div>
+				<div id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+					<span class="cart-info__icon mr-lg-3"><i class="fas fa-shopping-cart"></i></span>
+					<p class="mb-0 text-capitalize"><span id="item-count">2</span> items - $<span class="item-total">10.50</span></p>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row max-height align-items-center justify-content-center">
+			<div class="col-10 mx-auto banner text-center">
+				<h1 class="text-capitalize">Welcome to <strong class="banner-title">Hip-Hop</strong></h1>
+				<a href="#store" class="btn banner-link text-uppercase my-3">explore</a>
+			</div>
+			<div id="cart" class="cart">
+				<div class="cart-item d-flex justify-content-between text-capitalize my-3">
+					<img src="img/yo.jpg" class="img-fluid rounded-circle" id="item-img" alt="">
+					<div class="item-text">
+						
+						<p id="cart-item-title" class="font-weight-bold mb-0">cart-item</p>
+						<p id="cart-item-price" class="mb-0">11.00</p>
+					</div>
+					<a href="#" id="cart-item-remove" class="cart-item-remove"><i class="fas fa-trash"></i></a>
+				</div>
+				<div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
+					<h5 class="mr-5">total</h5>
+					<h5 class="ml-5"> $ <strong id="cart-total" class="font-weight-bold">10.00</strong></h5>
+				</div>
+				<div class="cart-buttons-container mt-3 d-flex justify-content-between">
+					<a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
+					<a href="#" class="btn btn-outline-secondary text-uppercase btn-warning">checkout</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+<section class="about py-5" id="about" >
+	<div class="container">
+		<div class="row">
+			<div class="col-10 mx-auto col-md-6 my-5">
+				<h1 class="text-capitalize">about <strong class="banner-title">Us</strong></h1>
+				<p class="my-4 text-muted w-74">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,aliquam voluptas beatae vitae expedita consectetur nesciunt quia deserunt asperiores facere fuga dicta fugiat corrupti et omnis porro at dolorum! Ad!</p>
+				<a href="#" class="btn btn-outline-secondary btn-black text-uppercase">explore</a>
+			</div>
+			<div class="col-10 mx-auto col-md-6 align-self-center my-5">
+				<div class="about-img__container">
+					<img src="img/yo.jpg" class="img-fluid" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>	
+<section id="store" class="store py-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-10 mx-auto col-sm-6 text-center">
+				<h1 class="text-capitalize">our <strong class="banner-title">store</strong></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn">
+				<a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all">all</a>
+				<a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="graffiti">graffiti</a>
+				<a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="breakdance">breakdance</a>
+				<a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="mcing">MCing</a>
+				<a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="djing">DJing</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-10 mx-auto col-md-6">
+				<form>
+					<div class="input-group mb-3">
+						<div class="input-group-prepend">
+							<span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
+						</div>
+						<input type="text" class="form-control" placeholder="item..." id="search-item" >
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="row" id="store-items">
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item graffiti" data-item="graffiti">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/graffiti.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">Graffiti item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item breakdance" data-item="breakdance">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/breakdance.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">Breakdance item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item mcing" data-item="mcing">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/mcing.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">MCing item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item djing" data-item="djing">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/djing.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">DJing item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item graffiti" data-item="graffiti">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/graffiti2.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">Graffiti item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item breakdance" data-item="breakdance">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/breakdance2.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">Breakdance item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item mcing" data-item="mcing">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/mcing2.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">MCing item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item djing" data-item="djing">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/djing2.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">DJing item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item graffiti" data-item="graffiti">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/graffiti3.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">Graffiti item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item breakdance" data-item="breakdance">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/breakdance3.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">Breakdance item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item mcing" data-item="mcing">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/mcing3.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">MCing item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10 col-sm-6 col-lg-3 mx-auto my-3 store-item djing" data-item="djing">
+				<div class="card">
+					<div class="img-container">
+						<img src="img/djing3.jpg" class="card-img-top store-img" alt="">
+						<span class="store-item-icon">
+							<i class="fas fa-shopping-cart"></i>
+						</span>
+					</div>
+					<div class="card-body">
+						<div class="card-text d-flex justify-content-center text-capitalize">
+							<h5 class="store-item-text pt-3">DJing item</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
