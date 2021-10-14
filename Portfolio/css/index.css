@@ -1,0 +1,636 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", Arial, sans-serif;
+}
+/*.collapse ul li a:hover {
+	background-color:lightskyblue;
+	opacity: 0.8;
+}
+*/
+.ms-auto {
+	margin-left: 10%;
+}
+.homestyle {
+	padding: 100px 0;
+	position: relative;
+	z-index: 0;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.hitext {
+	font-weight: 700;
+    color: #0779e6;
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    background: #fff;
+    border-radius: 4px;
+    padding: 4px 9px;
+}
+.hitext2 {
+	font-weight: 700;
+    color: #077bff;
+    font-size: 13px;
+    display: inline-block;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 0;
+    display: inline-block;
+    background: #007bff;
+    border-radius: 4px;
+    padding: 10px 10px;
+}
+.typewriter {
+	overflow: hidden;
+	border-right: .15em solid orange;
+	white-space: nowrap;
+	margin: 0 auto;
+	letter-spacing: .15em;
+	animation: 
+		typing 3.5s steps(100,end),
+		blink-caret .75s step-end infinite;
+}
+.hitext:after {
+	position: absolute;
+    bottom: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 0 15px;
+    border-color: #fff transparent transparent transparent;
+}
+.hitext2:after {
+	position: absolute;
+    bottom: -23px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    content: '';
+    width: 0;
+    height: 0;
+    /*
+    border-style: solid; 
+	border-width: 10px 10px 0 10px;
+    border-color: #077bff transparent transparent transparent;
+    */
+}
+.text-hello h1 {
+	font-weight: 400;
+	font-size: 60px;
+	line-height: 1.2;
+}
+.text-hello p {
+	font-weight: 200;
+	font-size: 30px;
+}
+.butn p {
+	padding: 10px 0;
+}
+.butn p .btn {
+	font-size: 13px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	padding: 10px 10px;
+	font-weight: bold;
+}
+.pic img {
+	width: 465px;
+	height: 500px;
+	opacity: 0.6;
+}
+.pic1 img {
+	height: 500px;
+	opacity: 0.6;
+}
+#about {
+	height: -10rem;
+}
+.slika img {
+	width: 300px;
+	margin-top: 250px;
+	margin-right:100px ;
+	opacity: 0.7;
+}
+.story {
+	position: relative;
+}
+.my {
+	position: absolute;
+	margin-left: 20px;
+}
+.my h3 {
+	background-color: royalblue ;
+}
+.skil {
+	position: absolute;
+	margin-left: 370px;
+}
+.skil h3 {
+	background-color: royalblue;
+}
+.experience {
+	position: absolute;
+	top: 19rem;
+	margin-left: 370px;
+}
+.experience h6 {
+	font-weight: bold;
+}
+.experience span {
+	position: absolute;
+	margin-left: 40px;
+	float: right;
+}
+.crta {
+	width: 180%;
+	height: 15px;
+	background-color: blue;
+	border-radius: 15px;
+}
+.experience2 {
+	position: absolute;
+	top: 25rem;
+	margin-left: 370px;
+}
+.experience2 h6 {
+	font-weight: bold;
+}
+.experience2 span {
+	position: absolute;
+	margin-left: 50px;
+	float: right;
+}
+.crta2 {
+	width: 140%;
+	height: 15px;
+	background-color: blue;
+	border-radius: 15px;
+}
+.uix-desing p img {
+	width: 69px;
+	height: 63px;
+}
+.read a {
+	text-decoration: none;
+	text-decoration-line: none;
+}
+.have {
+	display: flex;
+	flex-direction: row;
+}
+.have h6 {
+	position: relative;
+	margin-left: 200px;
+}
+.have p a {
+	position: relative;
+	top: -2px;
+	text-decoration-line: none;
+}
+.have span {
+	position: absolute;
+	top: 80px;
+	margin-left: 200px;
+	color: grey;
+}
+.customer {
+	display: flex;
+	padding: 40px 0;
+	margin-left: 50px;
+}
+.port-pic {
+	display: grid;
+}
+.port-pic .text-holder {
+	grid-area:region;
+	justify-self:stretch;
+	align-self:stretch;
+	display:grid;
+	align-center:center;
+	justify-content:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color:lightskyblue;
+	color:#fff;
+	opacity:0.0;
+	transition:1000ms;
+}
+.port-pic:hover .text-holder {
+	opacity: 0.8;
+}
+.text-holder a {
+	text-decoration-line: none;
+}
+.text-holder p {
+	text-align: center;
+	padding-top: 80px;
+	font-size: 33px;
+	color: darkblue;
+}
+.text-holder span {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 20px;
+	color: black;
+}
+.port-pic img {
+	grid-area: region;
+}
+.port-pic1 {
+	display: grid;
+}
+.port-pic1 img {
+	height: 245px;
+	grid-area: region;
+}
+.port-pic1 .text-holder {
+	grid-area:region;
+	justify-self:stretch;
+	align-self:stretch;
+	display:grid;
+	align-center:center;
+	justify-content:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color:lightskyblue;
+	color:#fff;
+	opacity:0.0;
+	transition:1000ms;
+}
+.port-pic1:hover .text-holder {
+	opacity: 0.8;
+}
+.port-pic2 {
+	display: grid;
+}
+.port-pic2 img {
+	height: 245px;
+	width: 700px;
+	grid-area: region;
+}
+.port-pic2 .text-holder {
+	grid-area:region;
+	justify-self:stretch;
+	align-self:stretch;
+	display:grid;
+	align-center:center;
+	justify-content:center;
+	font-size:20px;
+	font-weight:bold;
+	background-color:lightskyblue;
+	color:#fff;
+	opacity:0.0;
+	transition:1000ms;
+}
+.port-pic2:hover .text-holder {
+	opacity: 0.8;
+}
+.carousel-indicators li {
+	margin-bottom: -50%;
+	color: blue;
+}
+.carousel-indicators li:hover {
+	background-color: blue;
+}
+.sve {
+	display: flex;
+	flex-direction: row;
+}
+.alinone {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+.alinone:hover {
+	background-color: orange;
+}
+.allto img {
+	border: 1px solid transparent;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
+	margin-top: -150px
+}
+.txtlor {
+	color: grey;
+	position: relative;
+	margin-left: -80px;
+	margin-bottom: 30px;
+}
+.alinone1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+.alinone1:hover {
+	background-color: orange;
+}
+.allto1 img {
+	border: 1px solid transparent;
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	line-height: 80px;
+	margin-top:-150px;
+}
+.carousel-control-prev {
+	margin-left: -50px;
+	margin-top: 100px;
+	background-color: blue;
+	border-radius: 50%;
+	width: 5%;
+	height: 20%;
+	line-height: 20%;
+}
+.carousel-control-next {
+	background-color: blue;
+	margin-right: -50px;
+	margin-top: 100px;
+	border-radius: 50%;
+	width: 5%;
+	height: 20%;
+	line-height: 20%;
+}
+.somepic {
+	box-shadow: 2px 3px 3px  orange;
+	border-radius: 0 0 6px 6px;
+}
+.somepic img {
+	border-radius: 6px 6px 0 0;
+}
+.somepic a {
+	text-decoration: none;
+	color: black;
+}
+.somepic a:hover {
+	color: blue;
+}
+.ba {
+	position: relative;
+	left: 70px;
+}
+.baplan {
+	position: relative;
+}
+.baplan p {
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+.baplan h1 {
+	font-weight: bolder;
+	font-size: 50px;
+}
+.baplan span {
+	position: absolute;
+	font-size: 20px;
+	margin-left: -12px;
+}
+.baplan-txt p .btn {
+	font-size: 13px;
+	padding: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+.dugme p .btn {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 15px;
+	padding: 18px;
+	width: 70%;
+}
+.endname h4	{
+	font-size: 45px;
+}
+.social-list {
+	margin-left: -45px;
+}
+.social-net a {
+	text-decoration-line: none;
+	color: white;
+}
+.social-net ul li {
+	display: inline-block;
+	text-decoration: none;
+	text-decoration-line: none;
+	margin: 0 10px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+	background-color: #077bff;
+	color: white;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.services-list h4 {
+	font-size: 30px;
+}
+.services-list ul li {
+	list-style-type: none;
+}
+.questions ul li {
+	list-style-type: none;
+}
+.questions i {
+	margin-left: -50px;
+}
+.cont-title h3 {
+	font-weight: bolder;
+}
+.strelka {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	margin-left: 15rem;
+}
+.strelka p {
+	border: 1px solid transparent;
+	border-radius: 50px;
+	background-color:grey;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+}
+.strelka p:hover {
+	background-color:#077bff;
+}
+.strelka a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-weight: bolder;
+	text-decoration-line: none;
+	text-align: center;
+}
+.linija {
+	width: 100%;
+	height: 1px;
+	background-color: grey;
+}
+.end p {
+	margin-left: 15rem;
+	padding-top: 25px;
+}
+
+
+
+
+
+
+@media (max-width: 767.98px) {
+	.sebo span {
+		margin-left: 55px;
+	}
+	.sebo h1 {
+		margin-left: 55px;
+	}
+	.txt p {
+		font-size: 12px;
+		margin-top: 12px;
+	} 
+	.butn p .btn {
+		margin-top: -10px;
+	}
+	.pic img {
+		width: 506px;
+	}
+	.pic1 img {
+		width: 498px;
+	}
+	.story {
+		position: relative;
+	}
+	.my {
+		font-size: 15px;
+		margin-top: -100px;
+		margin-left: 8px;
+	}
+
+	.skil {
+		position: absolute;
+		margin-top: 100px;
+		width: 100%;
+		margin-left: 5px;
+		font-size: 15px;
+	}
+	.skil h3 {
+		width: 498px;
+	}
+	.experience {
+		position: absolute;
+		top: -15rem;
+		margin-left: 2rem;
+	}
+	.experience h6, span {
+		font-size: 13px;
+		font-weight: bolder;
+	}
+	.experience h6:hover {
+		color:royalblue;
+	}
+	.experience2 {
+		position: absolute;
+		top: -10rem;
+		margin-left: 2rem;
+	}
+	.experience2 h6, span {
+		font-size: 13px;
+		font-weight: bolder;
+	}
+	.experience2 h6:hover {
+		color: royalblue;
+	}
+	.port {
+		padding: 10px;
+	}
+	#services {
+		padding-top: 10rem;
+	}
+	.uixall {
+		margin-left: -10px ;
+	}
+	.blue-txt h3 {
+		text-align: center;
+		font-size: 25px;
+	}
+	.blue-txt p {
+		text-align: center;
+	}
+	.ba {
+		position: relative;
+		left: 2px;
+		margin: 20px;
+	}
+	.have {
+		margin-left: -180px;
+	}
+	.have span {
+		width:86%;
+	}
+	.myadd {
+		margin-left: 10px;
+	}
+	.mye {
+		margin-left: 10px;
+	}
+	.myphone {
+		margin-left: 10px;
+	}
+	.endname {
+		margin-left: 100px;
+	}
+	.endname span {
+		font-size: 60px;
+	}
+	.social-list {
+		margin-left: 100px;
+	}
+	.services-list {
+		margin-right: 50px;
+	}
+	.end {
+		margin-right: 100px;
+	}
+	.strelka {
+		margin-right: 100px;
+	}
+}
+
+
+
+
+@keyframes typing {
+	from {width: 0 }
+	to {width: 100% }
+}
+@keyframes blink-caret {
+	from, to {border-color: transparent;}
+	50% {border-color: orange;}
+}
