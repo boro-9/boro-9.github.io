@@ -1,0 +1,80 @@
+body {
+	margin: 0;
+	padding:0;
+	background: linear-gradient(to right, #CBCE22CC, #EA222FFF);
+}
+#display {
+	position: relative;
+	top: -20px;
+	left: 0%;
+	width: 26%;
+	padding: 30px;
+	width: 350px;
+  	max-width: 340px;
+  	font-size: 26px;
+  	text-align: right;
+  	background-color: #bcbd95;
+}
+#display:hover {
+	width: 350px;
+  	font-size: 26px;
+  	text-align: right;
+  	background-color: #bcbd95;
+}
+#display:active {
+  top: 5px;
+  width: 270px;
+  font-size: 26px;
+  text-align: right;
+  background-color: #bcbd95;
+}
+.calc {
+	position: relative;
+	top: 50px;
+	display:grid;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	grid-template-columns: repeat(6, 80px);
+	grid-template-rows: minmax(150px, auto) repeat(7, 120px);
+}
+.calc form td input {
+	width: 98px;
+	cursor: pointer;
+	font-size: 3rem;
+	border: 2px solid #FFFFFF;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+.calc form td input:hover {
+	background-color: #a9a9a9;
+}
+.operator {
+  background-color: #cee9ea;
+  position: relative;
+}
+.operator:hover {
+  background-color: #cee9ea;
+  box-shadow: 0 4px #b0d2cf;
+}
+.operator:active {
+  top: 4px;
+  box-shadow: none;
+}
+#clear {
+  position: relative;
+  display: block;
+  background-color: #ff9fa8;
+}
+#clear:hover {
+  display: block;
+  background-color: #F297A0;
+  box-shadow: 0 4px #CC7F86;
+}
+#clear:active {
+  top: 4px;
+  display: block;
+  background-color: #F297A0;
+  margin-bottom: 15px;
+  box-shadow: none;
+}
