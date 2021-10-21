@@ -1,0 +1,62 @@
+:root {
+  --mainWhite: #f5f5f5;
+  --mainGreen: #80cfa9;
+  --mainBlack: #333333;
+  --mainRed: #d62828;
+  --mainBlue: #11b5e4;
+}
+body {
+  background: var(--mainWhite) !important;
+  color:#333333;
+}
+.btn-danger:hover {
+  font-weight: bold;
+  background: var(--mainGreen) !important;
+  color: var(--mainBlack) !important;
+  border-color: var(--mainGreen) !important;
+}
+.form-control {
+  border-color: var(--mainRed) !important;
+}
+.form-control:hover {
+  border-color: var(--mainGreen) !important;
+}
+.feedback {
+  display: none;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+.item-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.complete-item {
+  color: var(--mainGreen) !important;
+}
+.complete-item:hover {
+  color: var(--mainGreen) !important;
+}
+.edit-item {
+  color: var(--mainBlue) !important;
+}
+.edit-item:hover {
+  color: var(--mainBlue) !important;
+}
+.delete-item {
+  color: var(--mainRed) !important;
+}
+.delete-item:hover {
+  color: var(--mainRed);
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.visibility {
+  opacity: 0.5;
+}
+.showItem {
+  display: block;
+}
