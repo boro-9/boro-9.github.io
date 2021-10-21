@@ -1,0 +1,202 @@
+
+:root {
+  --mainPink: #ef7998;
+  --mainYellow: rgb(249, 228, 148);
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --mainGrey: rgb(238, 238, 238);
+}
+body {
+  background:var(--mainWhite);
+  color: var(--mainBlack);
+}
+.navbar {
+  background: var(--mainYellow);
+  cursor: pointer;
+}
+.navbar-brand {
+  color: darkorange;
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+  left: 80px;
+}
+.navbar-brand:hover {
+  color: black;
+}
+.navbar-toggler {
+  outline: none!important;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+}
+.navbar-nav li a {
+  margin: 0px 30px;
+  text-decoration: none;
+  color: darkorange;
+  font-size:1.3rem;
+  font-weight: bold;
+}
+.navbar-nav li a:hover {
+  color: black;
+}
+.nav-item {
+  position: relative;
+  left: 50px;
+  margin-left: 10px;
+}
+.nav-info p {
+  margin: 0px 5px;
+  color: black;
+}
+.nav-info span {
+  color: black;
+}
+.cart-info {
+  border: 0.1rem solid black;
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+}
+.cart-info:hover {
+  background-color: orange;
+  border-color: orange;
+  color:var(--mainWhite);
+}
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
+  url("../img/rap.jpg") center/cover fixed no-repeat;
+  position: relative;
+}
+.banner {
+  color: var(--mainWhite);
+  margin-top: 4rem;
+}
+.banner h1 {
+  color: darkorange;
+  font-weight: bold;
+}
+.banner-title {
+  color: var(--mainBlack);
+  font-size: 4rem;
+}
+.banner-link {
+  text-align: center;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.0rem;
+  color: var(--mainBlack);
+  border:0.2rem solid var(--mainBlack);
+}
+.banner-link:hover {
+  background: var(--mainBlack);
+}
+.banner a {
+  font-size: 20px;
+  color: var(--mainBlack);
+  border: 0.2rem solid black;
+  padding: 0.4rem 0.6rem;
+  text-decoration: none; 
+  text-underline-style:none ;
+}
+.banner a:hover {
+  background: lightblue;
+  color: black;
+  text-decoration-line: none;
+  border: 0.2rem solid blue;
+}
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: var(--mainWhite);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.5);
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(-360deg);
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+.cart-item-remove {
+  color: darkorange;
+  transition: all 1s ease-in-out;
+  margin:0px 10px;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: black;
+}
+#cart-item-price {
+  font-size: 1rem;
+}
+.btn-warning {
+  color: orange;
+  border-color: orange;
+}
+.btn-black {
+  color: black;
+  border-color: black;
+}
+.about-img-container {
+  position: relative;
+}
+.about-img__container::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -1.7rem;
+  width: 55%;
+  height: 100%;
+  outline: 0.5rem solid orange;
+  z-index: -1;
+  transition: all 1s ease-in-out;
+}
+.about-img__container:hover:before {
+  top: 0;
+  left: 0;
+}
+.store {
+  background: lightgrey;
+}
+.img-container {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.img-container img {
+  width: 255px;
+  height: 300px;
+}
+.store-img {
+  transition: all 1s ease-in-out;
+}
+.img-container:hover .store-img {
+  transform: scale(1.2);
+}
+.store-item-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.75rem;
+  background: orange;
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out;
+  transform: translate(100%, 10%);
+}
+.img-container:hover .store-item-icon {
+  transform: translate(0, 0);
+}
+.store-item-icon:hover {
+  color: white;
+}
+.search-box {
+  background: orange;
+}
