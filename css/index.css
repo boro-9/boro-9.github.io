@@ -446,6 +446,12 @@ body {
 	.port {
 		padding: 10px;
 	}
+		.port-pic1 img {
+		width: 700px;
+	}
+	.port-pic2 img {
+		height: 300px;	
+		}
 	.pdfdocument iframe {
 		width: 20rem;
 		height: 25rem;
