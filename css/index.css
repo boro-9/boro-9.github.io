@@ -293,9 +293,13 @@ body {
 }
 .endname h4	{
 	font-size: 45px;
+	text-align: center;
+}
+.endname p {
+	text-align: center;
 }
 .social-list {
-	margin-left: -45px;
+	
 }
 .social-net a {
 	text-decoration-line: none;
@@ -316,7 +320,7 @@ body {
 	text-align: center;
 }
 .services-list {
-	margin-left: -120px;
+	margin-left: -50px;
 }
 .services-list h4 {
 	font-size: 30px;
@@ -325,7 +329,7 @@ body {
 	list-style-type: none;
 }
 .questions {
-	margin-left: -40px;
+
 }
 .questions ul li {
 	list-style-type: none;
