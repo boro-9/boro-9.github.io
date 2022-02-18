@@ -1,0 +1,152 @@
+:root {
+	--color-soft-blue: hsl(215, 51%, 70%);
+	--color-cyan: hsl(178, 100%, 50%);
+	--color-blue-backround: hsl(217, 54%, 11%);
+	--color-blue-borderline: hsl(215, 34%, 27%);
+	--color-blue-NTF-backround: hsl(216, 50%, 16%);
+}
+
+body {
+	background-color: var(--color-blue-backround);
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+#NTF {
+	background-color: var(--color-blue-NTF-backround);
+	border: 3px solid black;
+	border-radius: 20px;
+}
+
+.container {
+	padding: px;
+}
+
+body,
+.container,
+.top-pic,
+.last-pic {
+	display: flex;
+}
+
+body,
+.container,
+.top-pic,
+.last-pic {
+	flex-direction: column;
+}
+
+body {
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center	;
+	padding: 0 1rem;
+}
+.icon span {
+	font-weight:bold;
+	color: var(--color-cyan);
+}
+
+footer p,
+.blue-txt {
+	color: var(--color-soft-blue);
+	font-family: fantasy; 
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: blueviolet;
+}
+
+a:hover {
+	color: white;
+}
+
+a:active {
+	color: var(--color-blue-borderline);
+}
+
+.top-pic {
+	max-width: 20vw;
+	min-width: 12rem;
+	height: auto;
+	padding: 1rem;
+}
+
+.top-pic img {
+	border: 3px solid var(--color-blue-NTF-backround);
+	border-radius: 20px;
+}
+
+.txt-content {
+	margin-left: 2rem;
+}
+
+.icon-txt {
+	display: flex;
+	flex-direction: row;
+}
+
+.icon {
+	display: flex;
+}
+
+.icon p {
+	color: var(--color-cyan);
+	margin-top: -0rem;
+}
+.icon span {
+	margin-left: 0.3rem;
+}
+
+.icon1 {
+	display: flex;
+	margin-left: 7rem;
+	color: var(--color-soft-blue);
+}
+
+.icon1 p {
+	margin-top: -0rem;
+}
+
+.icon1 span {
+	margin-left: 0.3rem;
+}
+
+.line hr {
+	width: 90%;
+/*	margin-left: 1.2rem;*/
+	color: var(--color-soft-blue);
+}
+
+.last-pic {
+	display: flex;
+	flex-direction: row;
+}
+
+.last-pic img {
+	border: 2px solid white;
+	border-radius: 100%;
+	width: 20%;
+	object-fit: cover;
+	height: 4rem;
+	margin-left: 1.5rem;
+}
+
+.last-txt {
+	margin-left: 1rem;
+	font-size: 1.5rem;
+}
+
+.last-txt b {
+	color: var(--color-soft-blue);
+}
+
+.last-txt span {
+	color: orange;
+	font-weight: bolder;
+}
