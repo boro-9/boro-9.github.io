@@ -99,18 +99,13 @@ body {
 	line-height: 1.2;
 }
 .text-hello p {
-	font-weight: 200px;
-	font-size: 20px;
-}
-.text-hello b {
-	font-size: 15px;
+
 }
 .butn p {
 	padding: 10px 0;
 }
 .butn p a {
 	text-decoration-line: none;
-	
 }
 .butn p .btn {
 	font-size: 13px;
@@ -235,10 +230,14 @@ body {
 	color: black;
 }
 .port-pic img {
+
 	grid-area: region;
 }
 .port-pic1 {
 	display: grid;
+}
+.port-pic img {
+	height: 250px;
 }
 .port-pic1 img {
 	height: 150px;
@@ -446,15 +445,19 @@ body {
 		font-size: 13px;
 		font-weight: bolder;
 	}
-	#happy {
+/*	#happy {
 		padding: 20px;
 		margin-top: 350px;
+	}*/
+	#portfolio {
+		margin-top: 260px;
 	}
+
 	.port {
 		padding: 10px;
 	}
-		.port-pic1 img {
-		width: 700px;
+	.port-pic1 img {
+		width: 800px;
 	}
 	.port-pic2 img {
 		height: 300px;	
@@ -490,13 +493,13 @@ body {
 		font-size: 60px;
 	}
 	.social-list {
-		margin-left: 0px;
+		margin-left: -10px;
 	}
 	.services-list {
-		margin-left: -80px;
+		margin-left: -20px;
 	}
-	.end {
-
+	.questions {
+		margin-left: 40px;
 	}
 	.strelka {
 		margin-left: 150px;
@@ -606,17 +609,18 @@ body {
 		margin-left: 10px;
 	}
 	.endname {
-		margin-left: 200px;
+		margin-left: 30px;
 	}
 	.endname span {
 		font-size: 60px;
 	}
 	.social-list {
-		margin-left: 155px;
+		margin-left: 135px;
 	}
 	.services-list {
-		margin-left: -80px;
+		margin-left: -10px;
 	}
+
 	.end {
 		margin-left: 30px;
 	}
