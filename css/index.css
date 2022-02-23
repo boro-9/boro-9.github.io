@@ -140,10 +140,10 @@ body {
 }
 .pic img {
 	border: 1px solid transparent;
-	border-radius: 80%;
-	width: 600px;
-	height: 600px;
-	line-height: 600px;
+	border-radius: 50%;
+	width: 450px;
+	height: 450px;
+	line-height: 450px;
 }
 .pic1 img {
 	height: 500px;
@@ -187,7 +187,6 @@ body {
 .crta {
 	width: 180%;
 	height: 15px;
-	background-color: blue;
 	border-radius: 15px;
 }
 .experience2 {
@@ -205,11 +204,13 @@ body {
 .crta2 {
 	width: 140%;
 	height: 15px;
-	background-color: blue;
 	border-radius: 15px;
 }
-#happy {
+/*#happy {
 	margin-top: 550px;
+}*/
+#portfolio {
+	margin-top: 500px;
 }
 .port-pic {
 	display: grid;
@@ -307,7 +308,6 @@ body {
 	width: 70rem;
 	height: 63rem;
 	text-align: center;
-	margin-left: rem;
 }
 .dugme p .btn {
 	font-weight: bold;
@@ -323,6 +323,9 @@ body {
 .endname p {
 	text-align: center;
 }
+.social-list {
+	margin-left: 40px;
+}
 .social-net a {
 	text-decoration-line: none;
 	color: white;
@@ -334,7 +337,6 @@ body {
 	margin: 0 10px;
 	border: 1px solid transparent;
 	border-radius: 50%;
-
 	color: white;
 	width: 40px;
 	height: 40px;
@@ -342,7 +344,7 @@ body {
 	text-align: center;
 }
 .services-list {
-	margin-left: -30px;
+	margin-left: -60px;
 }
 .services-list h4 {
 	font-size: 30px;
@@ -359,31 +361,24 @@ body {
 .cont-title h3 {
 	font-weight: bolder;
 }
-.strelka {
-	display: flex;
-	justify-content: flex-end;
-	align-items: flex-end;
-	margin-left: 15rem;
-}
-.strelka p {
-	border: 1px solid transparent;
-	border-radius: 50px;
-	background-color:grey;
-	height: 40px;
-	width: 40px;
-	line-height: 40px;
-}
-.strelka p:hover {
-	background-color:#077bff;
-}
-.strelka a {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
 	color: white;
-	font-weight: bolder;
-	text-decoration-line: none;
-	text-align: center;
+	cursor: pointer;
+	padding: 15px;
+	border-radius:50%;
+	font-size: 18px;
+	font-weight: bold;
+	background-color: darkgreen;
+}
+#myBtn:hover {
+	background-color: seagreen;
 }
 .linija {
 	width: 100%;
@@ -394,7 +389,6 @@ body {
 	padding-top: 25px;
 	text-align: center;
 }
-
 
 
 
@@ -519,9 +513,6 @@ body {
 	.questions {
 		margin-left: 40px;
 	}
-	.strelka {
-		margin-left: 150px;
-	}
 }
 
 @media (min-width: 768px) {
@@ -633,7 +624,7 @@ body {
 		font-size: 60px;
 	}
 	.social-list {
-		margin-left: 135px;
+		margin-left: 230px;
 	}
 	.services-list {
 		margin-left: -10px;
@@ -713,7 +704,7 @@ body {
 		margin-left: -2rem;
 	}
 	.social-list {
-		margin-left: -5rem;
+		margin-left: 2rem;
 	}
 	.services-list {
 		margin-left: -2rem;
@@ -724,9 +715,7 @@ body {
 	.end {
 		margin-left: 1rem;
 	}
-	.strelka {
-		margin-top: -3rem;
-	}
+
 }
 
 @keyframes typing {
