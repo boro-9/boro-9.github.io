@@ -1,3 +1,6 @@
+html {
+	scroll-behavior: smooth;
+}
 body {
 	padding: 0;
 	margin: 0;
@@ -127,7 +130,7 @@ body {
 	top: -1.5rem;
 	left: -1.7rem;
 	border: 2px solid orange;
-	border-radius: 50%;
+	border-radius: 100px 100px 100px 100px;
 	width: 100%;
 	height: 100%;
 	outline: 0.5rem solid orange;
@@ -140,7 +143,7 @@ body {
 }
 .pic img {
 	border: 1px solid transparent;
-	border-radius: 50%;
+	border-radius: 100px 100px 100px 100px;
 	width: 400px;
 	height: 400px;
 	line-height: 400px;
@@ -206,12 +209,10 @@ body {
 	height: 15px;
 	border-radius: 15px;
 }
-/*#happy {
-	margin-top: 550px;
-}*/
 #portfolio {
-	margin-top: 500px;
+	margin-top:0.2rem;
 }
+
 .port-pic {
 	display: grid;
 }
@@ -249,7 +250,6 @@ body {
 	color: black;
 }
 .port-pic img {
-
 	grid-area: region;
 }
 .port-pic1 {
@@ -457,14 +457,9 @@ body {
 		font-size: 13px;
 		font-weight: bolder;
 	}
-/*	#happy {
-		padding: 20px;
-		margin-top: 350px;
-	}*/
-	#portfolio {
-		margin-top: 260px;
+	#portfolio{
+		margin-top: 21rem;
 	}
-
 	.port {
 		padding: 10px;
 	}
@@ -541,22 +536,18 @@ body {
 	.pic1 img {
 		width: 498px;
 	}
-	#happy {
-		padding: 20px;
-		margin-top: 250px;
-	}
 	.story {
 		position: relative;
 	}
 	.my {
 		font-size: 15px;
-		margin-top: -96px;
-		margin-left: 8px;
+		margin-top: -120px;
+		margin-left: 0px;
 		width: 72.6%;
 	}
 	.skil {
 		position: absolute;
-		margin-top: 100px;
+		margin-top: 50px;
 		width: 100%;
 		margin-left: 5px;
 		font-size: 15px;
@@ -566,8 +557,8 @@ body {
 	}
 	.experience {
 		position: absolute;
-		top: -15rem;
-		margin-left: 32rem;
+		top: -17rem;
+		margin-left: 2rem;
 	}
 	.experience h6, span {
 		font-size: 20px;
@@ -575,18 +566,21 @@ body {
 	}
 	.experience2 {
 		position: absolute;
-		top: -10rem;
-		margin-left: 32rem;
+		top: -12rem;
+		margin-left: 2rem;
 	}
 	.experience2 h6, span {
 		font-size: 20px;
 		font-weight: bolder;
 	}
+	#portfolio {
+		margin-top: 12rem;
+	}
 	.port {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
-	.port-pic1 img {
+	.port-pic img {
 		width: 700px;
 		height: 300px;
 	}
@@ -682,14 +676,14 @@ body {
 		font-size: 15px;
 		float: left;
 	}
-	#happy {
-		margin-top: 0rem;
+	#portfolio {
+		margin-top: -3rem;
 	}
 	.port-pic1 img {
 		height: 250px;
 	}
 	.port-pic2 img {
-		height: 250px;
+		height: 300px;
 	}
 	.pdfdocument {
 		margin-left: 10rem;
