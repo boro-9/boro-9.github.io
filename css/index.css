@@ -429,19 +429,22 @@ aside {
 	top: 0;
 	left: 0;
 }
+.pic1 img {
+	display: none !important;
+}
 .story {
 	position: relative !important;
 }
 .my {
 	position: absolute;
 	width: 50% !important;
-	top: -37.3rem;
-	left: 22rem;
+	top:-11rem;
+	left:rem;
 }
 .skil {
 	position: absolute;
 	width: 50% !important;
-	top: -23rem;
+	top: -17rem;
 	left:-1rem;
 }
 .skil h3 {
@@ -449,13 +452,13 @@ aside {
 }
 .experience {
 	position: absolute;
-	top: -9rem !important;
-	left: 22rem;
+	top: -3rem !important;
+	left: 18rem;
 }
 .experience2 {
 	position: absolute;
-	top: -3rem !important;
-	left: 22rem;
+	top: 2rem !important;
+	left: 18rem;
 }
 .port-pic img {
 	height: auto;
@@ -475,7 +478,7 @@ aside {
 }
 
 
-@media only screen and (max-width: 992px){}
+/*@media only screen and (max-width: 992px){}*/
 
 
 
