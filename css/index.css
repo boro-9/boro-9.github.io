@@ -131,7 +131,7 @@ body {
 	left: -1.7rem;
 	border: 2px solid orange;
 	border-radius: 100px 100px 100px 100px;
-	width: 100%;
+	width: 71%;
 	height: 100%;
 	outline: 0.5rem solid orange;
 	z-index: -1;
@@ -144,7 +144,7 @@ body {
 .pic img {
 	border: 1px solid transparent;
 	border-radius: 100px 100px 100px 100px;
-	width: 400px;
+	width: auto;
 	height: 400px;
 	line-height: 400px;
 }
@@ -163,21 +163,21 @@ body {
 }
 .my {
 	position: absolute;
-	margin-left: 0px;
 }
 .my h3 {
-	width:99.4%;
+	width:100%;
 }
 .skil {
 	position: absolute;
-	margin-top: 200px;
+	margin-left: 23rem;
 }
 .skil h3 {
-	width: 99.4%;
+	width: 23rem;
 }
 .experience {
 	position: absolute;
-	top: 28rem;
+	top: 20rem;
+	left: 23.5rem;
 }
 .experience h6 {
 	font-weight: bold;
@@ -194,7 +194,8 @@ body {
 }
 .experience2 {
 	position: absolute;
-	top: 33rem;
+	top: 27rem;
+	left: 23.5rem;
 }
 .experience2 h6 {
 	font-weight: bold;
@@ -259,7 +260,7 @@ body {
 	height: 250px;
 }
 .port-pic1 img {
-	height: 150px;
+	height: 250px;
 	grid-area: region;
 }
 .port-pic1 .text-holder {
@@ -283,7 +284,7 @@ body {
 	display: grid;
 }
 .port-pic2 img {
-	height: 150px;
+	height: 250px;
 	width: 700px;
 	grid-area: region;
 }
@@ -304,10 +305,25 @@ body {
 .port-pic2:hover .text-holder {
 	opacity: 0.8;
 }
+article {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.pdfdocument {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 .pdfdocument iframe {
-	width: 70rem;
-	height: 63rem;
+	width: 30rem;
+	height: 40rem;
 	text-align: center;
+}
+aside {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .dugme p .btn {
 	font-weight: bold;
@@ -391,326 +407,80 @@ body {
 }
 
 
-
-
-
-@media (min-width: 425px) {
-	.text-hello p {
-		font-size: 13px;
-	}
-	.text-hello b {
-		font-size: 14px;
-	}
-	.sebo span {
-		margin-left: 55px;
-	}
-	.sebo h1 {
-		margin-left: 55px;
-	}
-	.txt p {
-		font-size: 12px;
-		margin-top: 12px;
-	} 
-	.butn p .btn {
-		margin-top: -10px;
-	}
-	.pic img {
-		width: 400px;
-	}
-	.pic1 img {
-		width: 498px;
-	}
-	.story {
-		position: relative;
-	}
-	.my {
-		font-size: 15px;
-		margin-top: -96px;
-		margin-left: 8px;
-		width: 100.5%;
-	}
-	.skil {
-		position: absolute;
-		margin-top: 100px;
-		width: 50%;
-		margin-left: 5px;
-		font-size: 15px;
-	}
-	.skil h3 {
-		width: 400px;
-	}
-	.experience {
-		position: absolute;
-		top: -15rem;
-		margin-left: 2rem;
-	}
-	.experience h6, span {
-		font-size: 13px;
-		font-weight: bolder;
-	}
-	.experience2 {
-		position: absolute;
-		top: -10rem;
-		margin-left: 2rem;
-	}
-	.experience2 h6, span {
-		font-size: 13px;
-		font-weight: bolder;
-	}
-	#portfolio{
-		margin-top: 21rem;
-	}
-	.port {
-		padding: 10px;
-	}
-	.port-pic1 img {
-		width: 800px;
-	}
-	.port-pic2 img {
-		height: 300px;	
-		}
-	.pdfdocument iframe {
-		width: 20rem;
-		height: 25rem;
-		margin-left:3rem;
-	}
-	.blue-txt h3 {
-		text-align: center;
-		font-size: 20px;
-	}
-	.blue-txt p {
-		text-align: center;
-	}
-	.blue-txt i {
-		font-size: 7px;
-	}
-	.myadd {
-		margin-left: 10px;
-	}
-	.mye {
-		margin-left: 10px;
-	}
-	.myphone {
-		margin-left: 10px;
-	}
-	.endname {
-		margin-left: 50px;
-	}
-	.endname span {
-		font-size: 60px;
-	}
-	.social-list {
-		margin-left: -10px;
-	}
-	.services-list {
-		margin-left: -20px;
-	}
-	.questions {
-		margin-left: 40px;
-	}
+[class*="col-"] {
+  width: 100%;
 }
 
-@media (min-width: 768px) {
-	.text-hello p {
-		font-size: 20px;
-	}
-	.text-hello b {
-		font-size: 18px;
-	}
-	.sebo span {
-		margin-left: 55px;
-	}
-	.sebo h1 {
-		margin-left: 55px;
-	}
-	.txt p {
-		font-size: 16px;
-		margin-top: 12px;
-	} 
-	.butn p .btn {
-		margin-top: -10px;
-	}
-	.pic img {
-		width: 400px;
-	}
-	.pic1 img {
-		width: 498px;
-	}
-	.story {
-		position: relative;
-	}
-	.my {
-		font-size: 15px;
-		margin-top: -120px;
-		margin-left: 0px;
-		width: 72.6%;
-	}
-	.skil {
-		position: absolute;
-		margin-top: 50px;
-		width: 100%;
-		margin-left: 5px;
-		font-size: 15px;
-	}
-	.skil h3 {
-		width: 500px;
-	}
-	.experience {
-		position: absolute;
-		top: -17rem;
-		margin-left: 2rem;
-	}
-	.experience h6, span {
-		font-size: 20px;
-		font-weight: bolder;
-	}
-	.experience2 {
-		position: absolute;
-		top: -12rem;
-		margin-left: 2rem;
-	}
-	.experience2 h6, span {
-		font-size: 20px;
-		font-weight: bolder;
-	}
-	#portfolio {
-		margin-top: 12rem;
-	}
-	.port {
-		padding-top: 10px;
-		padding-bottom: 10px;
-	}
-	.port-pic img {
-		width: 700px;
-		height: 300px;
-	}
-	.port-pic2 img {
-		height: 300px;
-	}
-	.pdfdocument iframe {
-		width: 20rem;
-		height: 25rem;
-		margin-left:12rem;
-	}
-	.blue-txt h3 {
-		text-align: center;
-		font-size: 20px;
-	}
-	.blue-txt p {
-		text-align: center;
-	}
-	.blue-txt i {
-		font-size: 8px;
-	}
-	.myadd {
-		margin-left: 10px;
-	}
-	.mye {
-		margin-left: 10px;
-	}
-	.myphone {
-		margin-left: 10px;
-	}
-	.endname {
-		margin-left: 30px;
-	}
-	.endname span {
-		font-size: 60px;
-	}
-	.social-list {
-		margin-left: 230px;
-	}
-	.services-list {
-		margin-left: -10px;
-	}
-
-	.end {
-		margin-left: 30px;
-	}
-	.strelka {
-		margin-left: 150px;
-	}
+@media only screen and (max-width: 768px) {
+.pic::before {
+	content: "";
+	position: absolute;
+	top: -1.5rem;
+	left: -1.7rem;
+	border: 2px solid orange;
+	border-radius: 100px 100px 100px 100px;
+	width: 38% !important;
+	height: 100%;
+	outline: 0.5rem solid orange;
+	z-index: -1;
+	transition: all 1s ease-in-out;
+}
+.pic:hover:before {
+	top: 0;
+	left: 0;
+}
+.story {
+	position: relative !important;
+}
+.my {
+	position: absolute;
+	width: 50% !important;
+	top: -37.3rem;
+	left: 22rem;
+}
+.skil {
+	position: absolute;
+	width: 50% !important;
+	top: -23rem;
+	left:-1rem;
+}
+.skil h3 {
+	width: 98% !important;
+}
+.experience {
+	position: absolute;
+	top: -9rem !important;
+	left: 22rem;
+}
+.experience2 {
+	position: absolute;
+	top: -3rem !important;
+	left: 22rem;
+}
+.port-pic img {
+	height: auto;
+}
+.port-pic1 img {
+	height: auto;
+	margin-top: 1.5rem;
+}
+.port-pic2 img {
+	height: auto;
+	margin-top: 1.5rem;
+}
+.social-list {
+	margin-left: 13rem;
+}
 
 }
 
 
+@media only screen and (max-width: 992px){}
 
-@media (min-width:1440px) {
-	.story {
-		position: relative;
-	}
-	.my {
-		position: absolute;
-		width: 100%;
-		margin-top: 0px;
-	}
-	.skil {
-		position: absolute;
-		width: 80%;
-		margin-top: -0rem;
-		margin-left: 23rem;
-	}
-	.experience {
-		margin-top: 33rem;
-		margin-left: 23rem;
-	}
-	.experience h6 {
-		font-size: 15px;
-	}
-	.experience span {
-		position: absolute;
-		margin-left: 4rem;
-		font-size: 15px;
-		float: right;
-	}
-	.experience2 {
-		margin-top: 35rem;
-		margin-left: 23rem;
-	}
-	.experience2 h6 {
-		font-size: 15px;
-	}
-	.experience2 span {
-		position: absolute;
-		margin-left: 4rem;
-		font-size: 15px;
-		float: left;
-	}
-	#portfolio {
-		margin-top: -3rem;
-	}
-	.port-pic1 img {
-		height: 250px;
-	}
-	.port-pic2 img {
-		height: 300px;
-	}
-	.pdfdocument {
-		margin-left: 10rem;
-	}
-	.pdfdocument iframe {
-		height: 450px;
-	}
-	.dugme p {
-		margin-top: -1rem;
-	}
-	.endname {
-		margin-left: -2rem;
-	}
-	.social-list {
-		margin-left: 2rem;
-	}
-	.services-list {
-		margin-left: -2rem;
-	}
-	.questions {
-		margin-left: 8rem;
-	}
-	.end {
-		margin-left: 1rem;
-	}
 
-}
+
+
+
 
 @keyframes typing {
 	from {width: 0 }
