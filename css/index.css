@@ -163,7 +163,7 @@ body {
 }
 .experience {
 	position: absolute;
-	top:3rem;
+	top:1rem;
 	width: 100px;
 	left:1rem;
 }
@@ -182,7 +182,7 @@ body {
 }
 .experience2 {
 	position: absolute;
-	top: 7rem;
+	top: 5rem;
 	left: 1rem;
 }
 .experience2 h6 {
@@ -270,7 +270,7 @@ body {
 }
 .port-pic2 img {
 	height: 250px;
-	width: 380px;
+	width: 360px;
 	grid-area: region;
 }
 .port-pic2 .text-holder {
