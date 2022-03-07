@@ -1,4 +1,23 @@
+document.getElementById('myimage').style.display = 'none'
 
+/*const counters = document.querySelectorAll('.count')
+const speed = 200;
+
+counters.forEach((experience) =>{
+	const updateCount = () => {
+		const target = parseInt(experience.getAttribute('data-target'));
+		const count = parseInt(experience.innerText);
+		const increment = Math.trunc(target / speed);
+
+		if (count < target) {
+			experience.innerText = count + increment;
+			setTimeOut(updateCount, 1);
+		} else {
+			experience.innerText = target;
+		}
+	};
+	updateCount();
+})*/
 
 //Get the button
 var	mybutton = document.getElementById("myBtn");
