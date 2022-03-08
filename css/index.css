@@ -242,7 +242,7 @@ body {
 }
 .port-pic1 img {
 	height: 250px;
-	width: 400px;
+	width: 350px;
 	grid-area: region;
 }
 .port-pic1 .text-holder {
