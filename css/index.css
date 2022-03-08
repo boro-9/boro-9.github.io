@@ -153,6 +153,9 @@ body {
 .my h3 {
 	width: 21rem;
 }
+.my p {
+	padding: 5px;
+}
 .skil {
 	position: absolute;
 	left:-1rem;
@@ -160,6 +163,9 @@ body {
 }
 .skil h3 {
 	width: 21rem;
+}
+.skil p {
+	padding: 5px;
 }
 .experience {
 	position: absolute;
@@ -270,7 +276,7 @@ body {
 }
 .port-pic2 img {
 	height: 250px;
-	width: 360px;
+	width: 350px;
 	grid-area: region;
 }
 .port-pic2 .text-holder {
