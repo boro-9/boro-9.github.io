@@ -85,5 +85,5 @@ function showTotals(){
     document.querySelector('.item-total').textContent = finalMoney;
     document.getElementById('item-count').textContent = total.length;
 }
-
+    
 })();

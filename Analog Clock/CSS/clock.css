@@ -1,8 +1,10 @@
 body {
 	background: black;
+	color: aqua;
 }
 
 #canvas {
 	margin-left: 26rem;
 	margin-top: 50px;
+	
 }

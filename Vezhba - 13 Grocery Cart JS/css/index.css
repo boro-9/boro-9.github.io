@@ -118,7 +118,7 @@ body {
   overflow: hidden;
 }
 .show-cart {
-  width: 18rem;
+  width: 28rem;
   padding: 2rem 1.5rem;
   transform: rotateY(-360deg);
 }
