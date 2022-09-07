@@ -1,0 +1,312 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	overflow-x: hidden;
+}
+
+.navbar-brand span {
+	margin-left: 5rem;
+}
+
+.navbar-brand img {
+	width: 65px;
+	height: 50px;
+	opacity: 0.4;
+}
+
+.navbar-nav {
+	margin-left: 20rem;
+}
+
+.backpic {
+	background-image: url(../img/backpic.jpg);
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.all {
+	padding-top: 20px;
+	padding-bottom: 150px;
+}
+
+.title-coffee {
+	margin-top: 7rem;
+}
+
+.days {
+	font-weight: bold;
+}
+
+.days b {
+	margin-left: 8rem;
+}
+
+.cupcoffee {
+	display: flex;
+	justify-content: end;
+	align-items: flex-end;
+	margin-top: -10rem;
+}
+
+.cupcoffee img {
+	border-radius: 20px 20px 20px 20px;
+}
+
+.videoplay {
+	margin-left: -6rem;
+}
+
+.videoplay iframe {
+	border-radius: 20px 20px 20px 20px;
+	width: 400px;
+	height: 400px;
+	margin-left: 6rem;
+}
+
+.coffeemaking {
+	position: relative;
+	right: 8rem;
+}
+
+.making {
+	text-transform: uppercase;
+	margin-left: 8rem;
+	margin-top: 4rem;
+}
+
+.we {
+	margin-left: 8rem;
+	margin-top: 1rem;
+}
+
+.exellence {
+	margin-left: 8rem;
+	margin-top: 1rem;
+}
+
+.exellence p {
+	font-size: 14px;
+}
+
+.end {
+	margin-left: 8rem;
+	color: gray;
+}
+
+.back {
+	background-image: url(../img/back.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding: 3rem;
+}
+
+.coffee-title {
+	position: relative;
+}
+
+.cappu {
+	position: relative;
+	right: 2rem;
+	width: 90%;
+}
+
+.cappuccino {
+	background: linear-gradient(to left, orange, white, white);
+	box-shadow: 10px 10px 10px black;
+	padding: 15px;
+	width: 120%;
+	border: 1px solid transparent;
+	border-radius: 20px 20px 20px 20px;
+}
+
+.capp-title h5 {
+	display: flex;
+	justify-content: space-around;
+}
+
+.capp-text p {
+	margin-left: 15px;
+	font-size: 13px;
+}
+
+.allpic {
+	opacity: 0.7;
+}
+
+.pictwo img {
+	height: 460px;
+}
+
+.picthree img {
+	width: 800px;
+}
+
+.picfour {
+	margin-top: 1rem;
+	margin-left: 0rem;
+}
+
+.picfive {
+	margin-top: 1rem;
+	margin-left: 0rem;
+}
+
+.cofe-tittle {
+	position: relative;
+}
+
+.cofe-tittle p {
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+.cofe-tittle span {
+	position: absolute;
+	top: 0.5rem;
+	left: 12rem;
+}
+
+.cofe-tittle b {
+	color: white;
+}
+
+.cofe-text p {
+	font-size: 13px;
+	color: white;
+}
+
+.cooffee .cofe-tittle1 span {
+	position: relative;
+	left: 12rem;
+}
+
+.cofe-tittle1 {
+	position: relative;
+}
+
+.cofe-tittle1 p {
+	position: absolute;
+	top: 1.3rem;
+	font-size: 25px;
+	font-weight: bold;
+	color: white;
+}
+
+.cofe-tittle1 span {
+	position: absolute;
+	top: 1.8rem;
+	right: 15rem;
+}
+
+.cofe-tittle1 b {
+	color: white;
+}
+
+.cofe-text1 p {
+	font-size: 13px;
+	color: white;
+	position: absolute;
+	top: 12.5rem;
+}
+
+.clienthappy {
+	position: relative;
+	top: 3.8rem;
+	margin-bottom: 6rem;
+	margin-left: 6rem;
+}
+
+.blogpic img {
+	border-radius: 15px 15px 15px 15px;
+	width: 600px;
+	height: 480px;
+}
+
+.travstyle button {
+	border-radius: 20px;
+}
+
+.blogtitlle h4 {
+	font-weight: bold;
+}
+
+.blogtitlle p {
+	font-size: 14px;
+	color: gray;
+}
+
+.blog1 img {
+	border-radius: 15px 15px 15px 15px;
+	width: 600px;
+	height: 480px;
+}
+
+.about {
+	position: relative;
+	left: rem;
+}
+
+.abouttitlle h6 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.abouttitlle p {
+	font-size: 13px;
+	width: 80%;
+}
+
+.news h6 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.news p {
+	font-size: 13px;
+}
+
+.news input {
+	width: 60%;
+}
+
+.news {
+	position: relative;
+}
+
+footer {
+	background-image: url(../img/backpic.jpg);
+	background-position: center;
+	background-size: auto;
+	background-repeat: no-repeat;
+}
+
+.follow {
+	position: relative;
+}
+
+.follow-title h6 {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.follow-title p {
+	font-size: 13px;
+}
+
+.follow-icons {
+	position: absolute;
+	left: -2rem;
+}
+
+.follow-icons ul li {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.follow-icons ul li a {
+	color: whitesmoke;
+}
